@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.aboutUs {
+	height: 100%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    position: relative;        
+    background: url(../img/servicebg3.jpg) top center;
+    background-size: 100% auto;
+}
+
+.aboutUs-box {
+	margin: 30px 20px 30px;
+	padding: 30px 35px 30px;
+    background: rgba(255,255,255,0.9);
+}
+
+.row {
+	position: relative;
+	max-width: 100%;
+	margin: auto;
+	display: inline-block;
+}
+
+.met-editor {
+	font-weight: 300;
+	width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.met-editor p {
+    margin-bottom: .8em;
+}
+
+.contact-sub .b {
+    display: block;
+    font-size: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.contact-sub .p {
+    display: block;
+    font-size: 44px;
+    line-height: 1.2;
+}
+
+.contact-sub .p em {
+    font-size: 54px;
+    color: #00c0ff;
+    padding-right: 4px;
+    font-style: normal;
+}
+
+.editorlightgallery h5 {
+	margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.col-sm-6 {
+	max-width: 50%;
+	float: left;
+	padding: 0px 10px 0px;
+}
+
+.col-sm-6 img {
+	width: 100%;
+    opacity: 1;
+    display: inline;
+}
