@@ -200,3 +200,36 @@ body{
 		width: 33px;
 	}
 }
+/*按钮read more封装*/
+.sup-readmore {
+	font-size: 18px;
+	text-decoration: line-through;
+}
+.sup-readmore:hover{
+	
+	animation: ani 1s infinite alternate;
+}
+	@keyframes ani{
+
+			0%{
+				font-size: 18px;
+				text-decoration: line-through;
+			}
+			25%{
+				font-size: 18px;
+				text-decoration: line-through;
+			}
+			
+			50% {
+				text-decoration: none;
+	            color:#00c0ff;
+			}
+			75% {
+				text-decoration: none;
+	            color:#00c0ff;
+			}
+			100%{
+				text-decoration: none;
+				color:#00c0ff;
+			}
+		}

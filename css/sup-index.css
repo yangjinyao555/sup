@@ -159,22 +159,69 @@
 
 /*案例分析*/
 .sup-index-caseshow{
+	position: relative;
 	padding:30px;
+	border:2px solid #00C0FF;	
+}
+.sup-index-caseshow-caver{
+	width:49.4%;
+	height:209px;
+	opacity: .93;
+	position: absolute;
+	top:40px;;
+	left:30px;
+	background: white;
+	z-index: 2;
+}
+.sup-caseshow-caver-detail{
+	padding-left: 50px;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-right:20px;
 }
 .sup-index-caseshow-lists{
-	padding:12px;
-	border:2px solid #00C0FF;
-	
+	overflow: hidden;
+	height: 209px;
+	padding:10px;
+	position:relative;
+	top:0;
+	left:22px;
+
+}
+.sup-index-caseshow-lists-two{
+	overflow: hidden;
+	height: 209px;
+	padding:10px;
+	position:relative;
+	top:0;
+	left:22px;
+
+}
+.sup-index-imgbox {
+	overflow: hidden;
 }
 .sup-index-caseshow-list{
+	font-size: 0;
 	float:left;
-	width: 25%;
 	height:209px;
-	padding:
+	
 }
 .sup-index-caseshow-list img{
 	width:289px;
 	height:100%;
+}
+.sup-index-caseshow-carousel{
+	display: inline-block;
+	position: absolute;
+	top: 43%;
+}
+.sup-index-caseshow-carousel.pre {
+	left:-23px;
+	font-size: 80px;
+}
+.sup-index-caseshow-carousel.next {
+	right:-23px;
+	font-size: 80px;
 }
 /*联系我们css*/
 .sup-connection-index{
