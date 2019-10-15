@@ -1,11 +1,130 @@
 /*头部*/
-
-
+body{
+	background: cadetblue;
+	height: 2000px;
+}
+.sup-header{
+	position: relative;
+	/*height: 100px;*/
+	z-index: 10;
+	
+}
+/*头部导航*/
+.sup-nav-cont{
+	position:fixed;
+	z-index: 998;
+	top: 0;
+	width: 100%;
+	background: transparent;
+	border: none;
+}
+ .sup-nav-cont::before{
+	width: 100%;
+	height: 0;
+	background: white;
+	position: absolute;
+	content: '';
+	z-index: -1;
+	transition:height .5s;
+ }
+ .sup-nav-cont.active::before{
+ 	height: 100%;
+ }
+ .sup-nav-cont .main-cont{
+ 	padding: 0 95px 0 40px;
+ }
+ 	
+ .sup-nav-cont .sup-header-logo{
+  width: 186px;
+  max-width: 45%;
+  vertical-align: middle;
+  padding: 15px 0;
+  height: 80px;
+ }
+  .sup-nav-cont .sup-header-logo > .img{
+  	max-width: 100%;
+  	max-height:100%;
+  	height: auto;
+  	width: auto;
+  	text-align: center;
+  	vertical-align: middle;
+  }
+ 
+ .sup-nav-cont .sup-header-lists .button-blue{
+ 	padding: 8px 22px;
+ 	color: #000000;
+ 	font-weight: 400;
+ }
+ .sup-nav-cont .sup-header-lists .list{
+	padding: 15px 22px;
+	line-height: 50px;
+ }
+ 
+ .sup-nav-cont .sup-header-lists .list:hover > a{
+  	color: #00C0FF;
+  	transition: color 0.5s;
+  }
+ /*部nav中collapse按钮*/	
+ .sup-nav-cont .navbar-header:hover{
+ 	cursor: pointer;
+ }
+.sup-nav-cont .navbar-toggle{
+	display: block !important;
+	border:none;
+}
+.sup-nav-cont .navbar-toggle:hover{
+	background: transparent;
+}
+.sup-nav-cont .navbar-toggle.open{
+	position: fixed;
+	top: -2px;
+	right: 296px;
+}
+.sup-nav-cont .navbar-toggle .icon-bar{
+	background:#00C0FF;
+	height: 4px;
+	margin-top: 8px;
+	width: 40px;
+}
 
 /*侧边栏*/
-
-
-
+.sup-side-box{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 284px;
+	background: darkseagreen;
+	/*height: 500px;*/
+	z-index: 10;
+}
+.sup-side-box .sup-side-search{
+	width: 100%;
+	padding: 10px 30px 25px;
+	background: red;
+}
+.sup-side-box [name = search]{
+	height: 60px;
+	width: 84%;
+}
+.sup-side-box .sup-side-lists .list{
+	height: 70px;
+	border-bottom:1px solid green;
+}
+.sup-side-box .sup-side-lists .logo{
+	padding: 0 15px 0 1px;
+	border: 1px solid red;
+	line-height: 70px;
+}
+.sup-side-box .sup-side-lists .list:hover .list-text{
+	color: #fff;
+}
+.sup-side-box .sup-side-lists .list .add{
+	display: block;
+}
+.sup-side-box .sup-side-lists .list .remove{
+	display: none;
+}
 /*底部*/
 .sup-foot{
 	background: #222222;
@@ -39,7 +158,7 @@
 .sup-foot-text-link > li{
 	float:left;
 }
-.sup-foot-text-link > li > a::before{
+.blue-circle::before{
 	display: inline-block;
     content: '';
     width: 5px;
@@ -50,8 +169,34 @@
     vertical-align: 2px;
     margin-right: 15px;
 }
-.sup-foot-text-link > li.active > a::before{
-	width: 20px;
-    height: 20px;
-    background: red;
+
+@media only screen and (max-width: 855px) {
+	 .sup-nav-cont{
+	 	width: 100%;
+	 	height: 60px;
+ 	}
+ 	 .sup-nav-cont .main-cont{
+ 		padding: 0 58px 0 15px;
+ 	}
+ 	 /*导航logo*/
+	  .sup-nav-cont .sup-header-logo{
+		  width: 127px;
+		  height: 60px;
+	 }
+ 	/*导航列表*/
+ 	 .sup-nav-cont .sup-header-lists .list{
+		padding: 15px 20px;
+		line-height: 30px;
+	 }
+	
+	/*部nav中collapse按钮*/
+	.sup-nav-cont .navbar-toggle{
+		margin-top: 5px;
+	}
+	.sup-nav-cont .navbar-toggle .icon-bar{
+		background:#00C0FF;
+		height: 3px;
+		margin-top: 6px;
+		width: 33px;
+	}
 }

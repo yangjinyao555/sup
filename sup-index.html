@@ -1,127 +1,394 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no"/>
-		<title>首页</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-		<link rel="stylesheet" type="text/css" href="css/sup-reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/sup-public-style.css"/>
-		<link rel="stylesheet" type="text/css" href="css/sup-public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/sup-index.css"/>
+		<meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/sup-reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/sup-public-style.css" />
+		<link rel="stylesheet" type="text/css" href="css/sup-public.css" />
+		<link rel="stylesheet" type="text/css" href="css/sup-index.css" />
 		<link rel="stylesheet" type="text/css" href="sup-iconfont/iconfont.css"/>
-		<link rel="stylesheet" type="text/css" href="sup-index-font/iconfont.css"/>
-		
+		<link rel="stylesheet" type="text/css" href="css/about.css"/>
 	</head>
+
 	<body>
-		<!--首页各版块外框-->
-		<section class="sup-index-section clearfix">
-			<!--首页-->
-			<header class="sup-head">	
-			</header>
-			<!--案例欣赏-->
-			<div class="sup-index-caseshow margin-30-t bg-white">
-				<ul class="sup-index-caseshow-lists clearfix">
-					<li class="sup-index-caseshow-list">
-					    <img src="img/sup-caseshow-one.jpg" />
-					</li>
-					<li class="sup-index-caseshow-list">
-						<img src="img/sup-caseshow-two.png" />
-					</li>
-					<li class="sup-index-caseshow-list">
-						<img src="img/sup-caseshow-three.png" />
-					</li>
-					<li class="sup-index-caseshow-list">
-						<img src="img/sup-caseshow-four.png" />
-					</li>
-					<li class="sup-index-caseshow-list">
-						<img src="img/sup-caseshow-five.png" />
-					</li>
-					<li class="sup-index-caseshow-list">
-						<img src="img/sup-caseshow-six.png" />
-					</li>
-					<li class="sup-index-caseshow-list">
-						<img src="img/sup-caseshow-seven.png" />
-					</li>
-					<li class="sup-index-caseshow-list">
-						<img src="img/sup-caseshow-eight.png" />
-					</li>
-				</ul>
-			</div>
-			<!--联系我们-->
-			<div class="sup-index-connect margin-30-t bg-white clearfix">
-				<div class="sup-connection-index fl" id="dituContent"></div>
-				<div class="sup-connection-con margin-30-l fl">
-					<div class="sup-connection-detail">
-						<p class="font-16">全国统一服务热线：</p>
-						<p class="sup-connection-conone font-44 margin-15-tb color-main">4000-000-000</p>
-						<p class="margin-15-b font-16"><span class="iconfont icon-xiazai"></span> 广东省揭阳市老城区河南北路电子商务产业园2楼</p>
-						<p class="margin-15-b font-16"><span class="iconfont icon-weibiaoti- font-wight"></span>  (0663) 8888888/ (+86) 13111111111</p>
-						<p class="margin-15-b font-16"><span class="iconfont icon-xinxi color-white bg-black font-wight"></span>   Info@emailaddress.cn  </p>			
-					</div>
-					<div class="sup-connection-code ">
-						<div class="sup-connection-code-box fl">
-							<img class="sup-index-code" src="img/sup-index-code.jpg" />
-						</div>
-						<div class="sup-index-code-detail">
-							<p class="code-detailtop margin-20-b">
-								<span class="font-28  color-main">扫一扫</span>
-								<span class="iconfont font-28 icon-diannao"></span>
-								<span class="iconfont font-26 icon-shouji"></span>
-								<span class="iconfont font-22 icon-shouji1"></span>
-							</p>
-							<p class="margin-10-b font-12">拿起手机扫描二维码，即可时刻关注我们！</p>
-							<p class="margin-10-b">公主号名称：科技有限公司 </p>
-							<p class="margin-10-b">微信号：m1156ui001</p>
-						</div>				
-					</div>
-					<div class="text-decoration font-18">READ MORE<span>> > ></span></div>				
+
+		<!--公共头部-->
+		<header class="sup-header">
+			<nav class="navbar navbar-default sup-nav-cont">
+				<!--头部nav中collapse按钮-->
+				<div class="navbar-header pull-right">
+					<a class="collapsed navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
 				</div>
-			
+				<!--头部导航内容-->
+				<div class="main-cont clearfix">
+					<!--logo-->
+					<div class="sup-header-logo fl">
+						<img src="img/header-logo1.png" class="img">
+					</div>
+					<ul class="sup-header-lists fr">
+						<li class="fl list">
+							<a class="">首页</a>
+						</li>
+						<li class="fl list">
+							<a class="">关于</a>
+						</li>
+						<li class="fl list">
+							<a class="">产品</a>
+						</li>
+						<li class="fl list">
+							<a class="">视频</a>
+						</li>
+						<li class="fl list">
+							<a class="">案例</a>
+						</li>
+						<li class="fl list">
+							<a class="">资讯</a>
+						</li>
+						<li class="fl list">
+							<a class="">联系</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!--侧边栏-->
+		<aside class="sup-side-box">
+			<!--搜索-->
+			<form class="sup-side-search">
+				<div class="search-input">
+					<input type="text" placeholder="Search title..." name="search" />
+					<!--<a class="glyphicon glyphicon-search font-18"</a>-->
+					<a class=""></a>
+				</div>
+			</form>
+			<!--首页侧边栏列表-->
+			<ul class="sup-side-lists">
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">网站首页</b>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">关于我们</b>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">服务项目</b>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">产品中心</b>
+					<span class="fr margin-25-t font-20 add">+</span>
+					<span class="fr margin-25-t font-20 remove">-</span>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">新闻资讯</b>
+					<span class="fr margin-25-t font-20 add">+</span>
+					<span class="fr margin-25-t font-20 remove">-</span>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">案例展示</b>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">联系我们</b>
+				</li>
+			</ul>
+		</aside>
+        <!--首页  首页部分banner-->
+        <section class="sup-firstpage-banner">
+        	<!--首页中首页板块-->
+			<div class="sup-firstpage-box sup-app-use">
+				<div class="app-use-right fr font-32 margin-5-t">让营销变得更简单</div>
+				<div class="app-use-left text-right">
+					<div class="app-use">
+						<p class="app fl color-main">APP</p>
+						<div class="use">
+							<p class="font-38 padding-5-tb">按时缴费了见</p>
+							<p class="font-30 padding-10-t">IOS程序+APK程序</p>
+							<p>应用开发</p>
+						</div>
+					</div>
+					<div class="padding-30-t">
+						<span class="border margin-10-b margin-10-r"></span>
+						<span class="font-34">为企业快速打造全平台应用制作开发</span>
+					</div>
+					<p class="padding-15-tb font-20">For the rapid development of enterprise application development</p>
+					<p class="app-use-discribe padding-15-t">
+						<span></span>
+						<span class="font-18">高品质服务</span>
+						<span></span>
+						<span class="font-18">扁平化设计</span>
+						<span></span>
+						<span class="font-18">专业性开发</span>
+					</p>
+				</div>
 			</div>
-			
+			<!--internet-add 互联网+-->
+			<div class="sup-firstpage-box internet-add">
+				
+			</div>
+			<!--轮播按钮-->
+			<div class="firstpage-banner-btn">
+				<!--点击按钮-->
+				<div class="blue-btn margin-30-r">
+					<span class="black-circle"></span>
+					<span class="triangle"></span>
+				</div>
+				<div class="blue-btn margin-30-lr">
+					<span class="black-circle"></span>
+					<span class="triangle"></span>
+				</div>
+				<div class="blue-btn margin-30-l">
+					<span class="black-circle"></span>
+					<span class="triangle"></span>
+				</div>
+				<!--border-->
+				<div class="banner-border"></div>
+			</div>
+        </section>
+		<!--关于-->
+		<section class="box about">
+			<div class="background">
+				<div class="container">
+					<!--左-->
+					<div class="about-left">
+						<h3>
+				          	<font>Internet service technology, Limited by Share Ltd</font>
+				          	<span><u>网络服务</u>技术股份有限公司</span>
+				        </h3>
+						<ul>
+							<li>
+								<strong>
+                                	<a>5</a>
+                        			<a>7</a>         
+           	 					</strong>
+								<font>位</font>
+								<span>投资服务商</span>
+							</li>
+							<li>
+								<strong> 
+	                                <a>4</a>
+                        			<a>9</a>
+                        			<a>2</a>
+                        			<a>1</a>
+             					</strong>
+								<font>套</font>
+								<span>精品案例数</span>
+							</li>
+							<li>
+								<strong> 
+	                                <a>9</a>	             
+	            				</strong>
+								<font>万</font>
+								<span>总承诺资金</span>
+							</li>
+							<li>
+								<strong> 
+                                	<a>4</a>
+                        			<a>3</a>
+             					</strong>
+								<font>个</font>
+								<span>全国分销商</span>
+							</li>
+						</ul>
+						<p>网络服务技术股份有限公司（Internet service technology, Limited by Share Ltd）成立于2017年7月，凭借拔尖的团队、优秀的业务能力，星如雨迅速成长为国内SEO的领军者。我们专注网络营销业务，助力您的企业腾飞。同时，我们还拥有一支健全的建站团队，向外界承接APP应用开发/微网站/公众号策划营销等业务。</p>
+						<a class="click-box" href="" target="_self">
+							<span>READ MORE >>></span>
+						</a>
+					</div>
+					<!--右-->
+					<div class="about-right">
+						<div class="about-list">
+							<ul class="about-ul">
+								<li>
+									<img src="img/about1.jpg" />
+								</li>
+								<li>
+									<img src="img/about2.jpg" />
+								</li>
+								<li>
+									<img src="img/about3.jpg" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-			
-		<section></section>
+		<!--视频-->
+		<div class="box video">
+			<div class="background">
+				<div class="container">
+					<div class="video-left">
+						<div class="video-content play">
+							<video loop="" controls="" src="https://www.mituo.cn/templates/uitest/static/video/met-index-mb.mp4"></video>
+						</div>
+						<div class="video-text">
+				          	<h3>什么是响应式？</h3>
+			          		<ul>
+		                        <li><span></span><b>语言：</b>2017-08-01</li>
+		                        <li><span></span><b>来源：</b>MP4视频</li>
+		                        <li><span></span><b>发布：</b>ortotra</li>
+		                        <li><span></span><b>类型：</b>英语（中文翻译）</li>
+		                    </ul>
+			          		<p>页面的布局方式应当根据用户所处的设备环境（系统平台，屏幕尺寸，屏幕方向）进行正确的响应布局调整，无论用户使用的是笔记本还是手机或者平板，我们的网站页面都能够自动切换分辨率，图片大小尺寸以及相关的脚本功能，响应式Web设计的目的就是为了：只需一个网站前台源码，却能兼容多个终端，而不是为了每个终端去单独设计网站前台。</p>
+			                <a class="click-box" href="" title="什么是响应式？" target="_self">
+				            	<span>READ MORE >>></span>
+				          	</a>
+                  		</div>
+					</div>
+					<div class="video-right">
+						<div class="video-list">
+							<ol class="video-ol">
+								<li class="video-li" title="什么是响应式？">
+									<font>
+										<img class="video-lazy" alt="什么是响应式？" src="img/video1.jpg">
+									</font>
+									<span><a href="" title="什么是响应式？" target="_self">什么是响应式？</a></span>
+								</li>
+								<li class="video-li" title="教你开发应用!">
+									<font>
+										<img class="video-lazy" alt="教你开发应用!" src="img/video2.jpg">
+									</font>
+									<span><a href="" title="教你开发应用!" target="_self">教你开发应用!</a></span>
+								</li>
+								<li class="video-li" title="做网站有什么用？">
+									<font>
+										<img class="video-lazy" alt="做网站有什么用？" src="img/video3.jpg">
+									</font>
+									<span><a href="" title="做网站有什么用？" target="_self">做网站有什么用？</a></span>
+								</li>
+								<li class="video-li" title="PS的技巧">
+									<font>
+										<img class="video-lazy" alt="PS的技巧" src="img/video4.jpg">
+									</font>
+									<span><a href="" title="PS的技巧" target="_self">PS的技巧</a></span>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!--案例欣赏-->
+		<section class="sup-index-section sup-index-caseshow margin-30-t bg-white">
+			<ul class="sup-index-caseshow-lists clearfix">
+				<li class="sup-index-caseshow-list">
+				    <img src="img/sup-caseshow-one.jpg" />
+				</li>
+				<li class="sup-index-caseshow-list">
+					<img src="img/sup-caseshow-two.png" />
+				</li>
+				<li class="sup-index-caseshow-list">
+					<img src="img/sup-caseshow-three.png" />
+				</li>
+				<li class="sup-index-caseshow-list">
+					<img src="img/sup-caseshow-four.png" />
+				</li>
+				<li class="sup-index-caseshow-list">
+					<img src="img/sup-caseshow-five.png" />
+				</li>
+				<li class="sup-index-caseshow-list">
+					<img src="img/sup-caseshow-six.png" />
+				</li>
+				<li class="sup-index-caseshow-list">
+					<img src="img/sup-caseshow-seven.png" />
+				</li>
+				<li class="sup-index-caseshow-list">
+					<img src="img/sup-caseshow-eight.png" />
+				</li>
+			</ul>
+		</section>
+		<!--联系我们-->
+		<section class="sup-index-section sup-index-connect margin-30-t bg-white clearfix">
+			<div class="sup-connection-index fl" id="dituContent"></div>
+			<div class="sup-connection-con margin-30-l fl">
+				<div class="sup-connection-detail">
+					<p class="font-16">全国统一服务热线：</p>
+					<p class="sup-connection-conone font-44 margin-15-tb color-main">4000-000-000</p>
+					<p class="margin-15-b font-16"><span class="iconfont icon-xiazai"></span> 广东省揭阳市老城区河南北路电子商务产业园2楼</p>
+					<p class="margin-15-b font-16"><span class="iconfont icon-weibiaoti- font-wight"></span>  (0663) 8888888/ (+86) 13111111111</p>
+					<p class="margin-15-b font-16"><span class="iconfont icon-xinxi color-white bg-black font-wight"></span>   Info@emailaddress.cn  </p>			
+				</div>
+				<div class="sup-connection-code ">
+					<div class="sup-connection-code-box fl">
+						<img class="sup-index-code" src="img/sup-index-code.jpg" />
+					</div>
+					<div class="sup-index-code-detail">
+						<p class="code-detailtop margin-20-b">
+							<span class="font-28  color-main">扫一扫</span>
+							<span class="iconfont font-28 icon-diannao"></span>
+							<span class="iconfont font-26 icon-shouji"></span>
+							<span class="iconfont font-22 icon-shouji1"></span>
+						</p>
+						<p class="margin-10-b font-12">拿起手机扫描二维码，即可时刻关注我们！</p>
+						<p class="margin-10-b">公主号名称：科技有限公司 </p>
+						<p class="margin-10-b">微信号：m1156ui001</p>
+					</div>				
+				</div>
+				<div class="text-decoration font-18">READ MORE<span>> > ></span></div>				
+			</div>
+		</section>
+
 		<!--公共底部-->
 		<footer class="sup-foot clearfix">
-			<div class="sup-foot-right fr text-align-r">
-				<p class="sup-foot-text text-align-c line-28">— 努力创造优质作品，奉献更多精品佳作 —</p>
+			<div class="sup-foot-right fr">
+				<p class="sup-foot-text text-right line-28">— 努力创造优质作品，奉献更多精品佳作 —</p>
 				<ul class="sup-foot-text-link clearfix">
 					<li class="fl">友情连接:</li>
-					<li class="fl padding-10-l aaa"><a>LOGO设计</a></li>
-					<li class="fl padding-10-l aaa"><a>产品设计</a></li>
-					<li class="fl padding-10-l aaa"><a>品牌设计</a></li>
+					<li class="fl padding-15-l">
+						<a class="blue-circle">LOGO设计</a>
+					</li>
+					<li class="fl padding-15-l">
+						<a class="blue-circle">产品设计</a>
+					</li>
+					<li class="fl padding-15-l">
+						<a class="blue-circle">品牌设计</a>
+					</li>
 				</ul>
 			</div>
-			<div class="sup-foot-left fl text-align-l">
+			<div class="sup-foot-left fl">
 				<div class="sup-foot-nav margin-5-b">
 					<a href="#" class="">关于我们</a>
 					<a href="#">关于我们</a>
 					<a href="#">关于我们</a>
 				</div>
 				<p class="line-26">本站涵盖的内容、图片、视频等模板演示数据，部分未能与原作者取得联系。若涉及版权问题，请及时通知我们并提供相关证明材料，我们将支付合理报酬或立即予以删除！</p>
-				<div class="sup-foot-powered">Powered by <a>MetInfo</a> 7.0.0beta</div>
+				<div class="sup-foot-powered margin-10-t">Powered by<a>MetInfo</a> 7.0.0beta</div>
 			</div>
 		</footer>
-		
+
 	</body>
+
 </html>
 <script src="js/jquery-2.1.0.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/sup-common.js"></script>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-<script src="js/sup-index-map.js" type="text/javascript" charset="utf-8"></script>
 <script>
-	function aaa(wwww){
-
-		$(wwww).click(function(){
-
-			$(this).addClass('active')
-		
-
-		})
+	//右边滚动条判断
+	window.onscroll = function() {
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop
+		if(scrollTop >= 20) {
+			$('.sup-nav-cont').addClass('active')
+		} else {
+			$('.sup-nav-cont').removeClass('active')
+		}
 	}
-aaa('.sup-foot-text-link .aaa')
-console.log(aaa())
+
+	//侧边栏划出划入
+	$('.sup-nav-cont .navbar-toggle').click(function() {
+		$(this).addClass('open')
+	})
 </script>

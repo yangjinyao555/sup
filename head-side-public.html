@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/sup-reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/sup-public-style.css" />
+		<link rel="stylesheet" type="text/css" href="css/sup-public.css" />
+	</head>
+	<body>
+		<!--公共头部-->
+		<header class="sup-header">
+			<nav class="navbar navbar-default sup-nav-cont">
+				<!--头部nav中collapse按钮-->
+				<div class="navbar-header pull-right">
+					<a class="collapsed navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+				</div>
+				<!--头部导航内容-->
+				<div class="main-cont clearfix">
+					<!--logo-->
+					<div class="sup-header-logo fl">
+						<img src="img/header-logo1.png" class="img">
+					</div>
+					<ul class="sup-header-lists fr">
+						<li class="fl list">
+							<a class="">首页</a>
+						</li>
+						<li class="fl list">
+							<a class="">关于</a>
+						</li>
+						<li class="fl list">
+							<a class="">产品</a>
+						</li>
+						<li class="fl list">
+							<a class="">视频</a>
+						</li>
+						<li class="fl list">
+							<a class="">案例</a>
+						</li>
+						<li class="fl list">
+							<a class="">资讯</a>
+						</li>
+						<li class="fl list">
+							<a class="">联系</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!--侧边栏-->
+		<aside class="sup-side-box">
+			<!--搜索-->
+			<form class="sup-side-search">
+				<div class="search-input">
+					<input type="text" placeholder="Search title..." name="search" />
+					<!--<a class="glyphicon glyphicon-search font-18"</a>-->
+					<a class=""></a>
+				</div>
+			</form>
+			<!--首页侧边栏列表-->
+			<ul class="sup-side-lists">
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">网站首页</b>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">关于我们</b>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">服务项目</b>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">产品中心</b>
+					<span class="fr margin-25-t font-20 add">+</span>
+					<span class="fr margin-25-t font-20 remove">-</span>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">新闻资讯</b>
+					<span class="fr margin-25-t font-20 add">+</span>
+					<span class="fr margin-25-t font-20 remove">-</span>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">案例展示</b>
+				</li>
+				<li class="padding-30-lr list">
+					<i class="logo">ss</i>
+					<b class="list-text">联系我们</b>
+				</li>
+			</ul>
+		</aside>
+			<!--公共底部-->
+		<footer class="sup-foot clearfix">
+			<div class="sup-foot-right fr">
+				<p class="sup-foot-text text-right line-28">— 努力创造优质作品，奉献更多精品佳作 —</p>
+				<ul class="sup-foot-text-link clearfix">
+					<li class="fl">友情连接:</li>
+					<li class="fl padding-15-l">
+						<a class="blue-circle">LOGO设计</a>
+					</li>
+					<li class="fl padding-15-l">
+						<a class="blue-circle">产品设计</a>
+					</li>
+					<li class="fl padding-15-l">
+						<a class="blue-circle">品牌设计</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sup-foot-left fl">
+				<div class="sup-foot-nav margin-5-b">
+					<a href="#" class="">关于我们</a>
+					<a href="#">关于我们</a>
+					<a href="#">关于我们</a>
+				</div>
+				<p class="line-26">本站涵盖的内容、图片、视频等模板演示数据，部分未能与原作者取得联系。若涉及版权问题，请及时通知我们并提供相关证明材料，我们将支付合理报酬或立即予以删除！</p>
+				<div class="sup-foot-powered margin-10-t">Powered by<a>MetInfo</a> 7.0.0beta</div>
+			</div>
+		</footer>
+	
+	</body>
+</html>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/sup-common.js"></script>
+<script>
+	//右边滚动条判断
+	window.onscroll = function() {
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop
+		if(scrollTop >= 20) {
+			$('.sup-nav-cont').addClass('active')
+		} else {
+			$('.sup-nav-cont').removeClass('active')
+		}
+	}
+
+	//侧边栏划出划入
+	$('.sup-nav-cont .navbar-toggle').click(function() {
+		$(this).addClass('open')
+	})
+</script>
+
