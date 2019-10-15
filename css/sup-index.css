@@ -1,16 +1,161 @@
 /*首页*/
+/*首页banner轮播*/
+.sup-firstpage-banner{
+	width: 100%;
+	height: 913px;
+	background: blanchedalmond;
+	/*position: fixed;*/
+	/*top: 0;*/
+	/*bottom: 0;*/
+	/*left: 0;*/
+	/*background: darkviolet;*/
+}
+
+.sup-firstpage-box{
+	position: relative;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;	
+	/*background: #fff;*/
+	height: 432px;
+	max-width: 868px;
+	width: 800px;
+}
+.sup-firstpage-box::before{
+	position: absolute;
+	top: -35px;
+	left: -35px;
+	bottom: -35px;
+	right: -35px;
+	z-index: -1;
+	display: block;
+	content: '';
+	opacity: .35;
+	background: #fff;
+}
+
+/*轮播第一张图部分  sup-app-use*/
+/*app字样标题*/
+.sup-firstpage-box .app-use-left{
+	padding-right: 94px;
+}
+.sup-firstpage-box .app-use .app{
+	font-size: 200px;
+	display: inline-block;
+}
+.sup-firstpage-box .app-use .use{
+	display: inline-block;
+}
+.sup-firstpage-box .use > p:nth-child(3){
+	font-size: 70px;
+	padding: 20px 0 30px;
+	border-bottom: 1px solid #111111;
+}
+.sup-firstpage-box .app-use-left .border{
+	display: inline-block;
+	width: 73px;
+	height: 3px;
+	background: #111111;
+}
+.sup-firstpage-box .app-use-discribe > span:nth-child(odd){
+	border: 1px solid #00C0FF;
+	margin: 0 11px 0 28px;
+}
+.sup-firstpage-box .app-use-right{
+	padding: 15px 16px;
+	width: 64px;
+	border-bottom:5px solid #00C0FF;
+	border-top:5px solid #00C0FF;
+	border-left: 1px solid #111111;
+	border-right: 1px solid #111111;
+}
+
+/*轮播内容第二图部分 internet-add 互联网+*/
+
+
+
+/*轮播按钮*/
+.sup-firstpage-banner .firstpage-banner-btn{
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+}
+.sup-firstpage-banner .banner-border{
+	border-top: 1px solid #111111;
+	width: 100%;
+}
+.sup-firstpage-banner .blue-btn,
+.sup-firstpage-banner .blue-btn .black-circle{
+	display: inline-block;
+	border-radius: 50%;
+	transition: all .3s;
+	vertical-align: middle;
+	
+}
+.sup-firstpage-banner .blue-btn{
+	width: 24px;
+	height: 24px;
+	border: 1px solid #111;
+	text-align: center;
+	line-height: 22px;
+	background: #fff;
+	position: absolute;
+	top: -12px;
+}
+.sup-firstpage-banner .blue-btn:nth-child(1){
+	left: 40%;
+
+}
+.sup-firstpage-banner .blue-btn:nth-child(2){
+	left: 50%;
+	transform: translateX(-50%);
+}
+.sup-firstpage-banner .blue-btn:nth-child(3){
+	left: 60%;
+}
+.sup-firstpage-banner .blue-btn .black-circle{
+	width: 14px;
+	height: 14px;
+	background: #000000;
+}
+.sup-firstpage-banner .blue-btn:hover{
+	background: #00C0FF;
+	border: none;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+}
+.sup-firstpage-banner .blue-btn:hover .black-circle{
+	line-height: 30px;
+	background: #fff;
+}
+
+.sup-firstpage-banner .triangle{
+	border: 8px solid transparent;
+	border-top: 8px solid transparent;
+	position: absolute;
+	top: -40px;
+	left: 50%;
+ 	transform: translateX(-50%);
+ 	transition: all .5s;	
+}
+.sup-firstpage-banner .blue-btn:hover .triangle{
+	border-top: 8px solid #000000;
+	top: -20px;
+	transition: all .5s;	
+}
+
+
 
 
 /*首页各版块外框*/
 .sup-index-section{
-	background-image: url(../img/sup-bg-img.jpg);
+	background: beige;
 	margin: 0 auto;
 	width: 1240px;
 }
-.sup-index-section .font{
-	font-size:0.4rem;
-}
-
 
 /*案例分析*/
 .sup-index-caseshow{
@@ -53,17 +198,6 @@
 	width:100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1200px) {
 	/*首页各版块外框*/
 	.sup-index-section{
@@ -75,7 +209,6 @@
 	.sup-index-section{
 		width: 690px;
 	}
-	
 }
 @media only screen and (max-width: 768px) {
 	/*首页各版块外框*/
