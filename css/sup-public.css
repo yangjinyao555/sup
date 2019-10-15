@@ -1,0 +1,57 @@
+/*头部*/
+
+
+
+/*侧边栏*/
+
+
+
+/*底部*/
+.sup-foot{
+	background: #222222;
+	width: 100%;
+	max-height: 704px;
+	color: #EEEEEE;
+	padding: 25px 40px;
+}
+.sup-foot-left{
+	max-width: 823px;
+	/*background: red;*/
+}
+
+.sup-foot-nav{
+	
+}
+.sup-foot-nav > a,
+.sup-foot-powered > a,
+.sup-foot-text-link a{
+	color: #EEEEEE;
+}
+.sup-foot-nav > a:hover,
+.sup-foot-powered > a:hover,
+.sup-foot-text-link a:hover{
+	color:#00C0FF;
+	transition: color 0.5s;
+}
+.sup-foot-right{
+ 		
+}
+.sup-foot-text-link > li{
+	float:left;
+}
+.sup-foot-text-link > li > a::before{
+	display: inline-block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #00c0ff;
+    vertical-align: 2px;
+    margin-right: 15px;
+}
+.sup-foot-text-link > li.active > a::before{
+	width: 20px;
+    height: 20px;
+    background: red;
+}

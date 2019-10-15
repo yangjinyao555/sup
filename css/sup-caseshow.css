@@ -1,0 +1,17 @@
+/*案例展示*/
+
+.sup-caseshow{
+	background-image: url(../img/sup-bg-img.jpg);
+}
+.sup-caseshow-lists{
+	padding:36px;
+}
+.sup-caseshow-list{
+	float:left;
+	width:25%;
+	height:211px;
+}
+.sup-caseshow-list img{
+	max-width:100%;
+	max-height:100%
+}

@@ -1,0 +1,93 @@
+/*首页*/
+
+
+/*首页各版块外框*/
+.sup-index-section{
+	background-image: url(../img/sup-bg-img.jpg);
+	margin: 0 auto;
+	width: 1240px;
+}
+.sup-index-section .font{
+	font-size:0.4rem;
+}
+
+
+/*案例分析*/
+.sup-index-caseshow{
+	padding:30px;
+}
+.sup-index-caseshow-lists{
+	padding:12px;
+	border:2px solid #00C0FF;
+	
+}
+.sup-index-caseshow-list{
+	float:left;
+	width: 25%;
+	height:209px;
+	padding:
+}
+.sup-index-caseshow-list img{
+	width:289px;
+	height:100%;
+}
+/*联系我们css*/
+.sup-connection-index{
+	width:706px;
+	height:397px;
+	border:#ccc solid 1px;
+}
+.sup-index-code{
+	width:104px;
+	height:104px;
+}
+.sup-connection-detail{
+	width:100%;
+}
+.sup-connection-code-box{
+	width: 114px;
+	height:114px;
+	margin: 5px;
+}
+.sup-connection-code{
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+	/*首页各版块外框*/
+	.sup-index-section{
+		width: 1020px;
+	}
+}
+@media only screen and (max-width: 992px) {
+	/*首页各版块外框*/
+	.sup-index-section{
+		width: 690px;
+	}
+	
+}
+@media only screen and (max-width: 768px) {
+	/*首页各版块外框*/
+	.sup-index-section{
+		width: 680px;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	/*首页各版块外框*/
+	.sup-index-section{
+		width: 7.50rem;
+		
+	}
+}
