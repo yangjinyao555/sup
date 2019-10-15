@@ -165,7 +165,7 @@ li {
 }
 
 .about-list ul {
-    display: block;
+    display: inline-block;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -233,6 +233,7 @@ li {
     list-style: none;
     margin: 8px 0 18px 0;
     padding: 0;
+    display: inline-block;
 }
 
 .video-text ul li {
@@ -347,12 +348,241 @@ li {
 	.about-left h3 span {
 	    font-size: 36px;
 	}
+	.about-left ul {
+		margin: 30px 0;
+	}
+	.about-left ul li {
+		padding: 0 24px;
+	}
+	.about-left ul li a {
+		width: 28px;
+		height: 41px;
+		line-height: 39px;
+		font-size: 39px;
+	}
+	.about-left ul li font {
+		margin: 18px 0 0 8px;
+	}
+	.about-left p {
+		font-size: 14px;
+	    line-height: 20px;
+	    margin-bottom: 30px;
+	}
+	.video-text h3 {
+	    font-size: 24px;
+	}
+	.video-text ul li {
+		font-size: 14px;
+    	line-height: 24px;
+	}
+	.video-text p {
+		margin-bottom: 30px;
+	    font-size: 14px;
+	    line-height: 20px;
+	}
+	.click-box {
+		font-size: 15px;
+	}
+	.video-list {
+		height: 288px;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-	
+	.about-left {
+		width: 62%;
+	}
+	.about-left h3 {
+	    width: 166%;
+	}
+	.about-left ul {
+	    width: 166%;
+	}
+	.about-right {
+	    width: 35%;
+	    margin-top: 200px;
+	}
+	.about-left h3 font {
+		font-size: 18px;
+	}
+	.about-left h3 span u {
+	    font-size: 36px;
+	}
+	.about-left h3 span {
+	    font-size: 30px;
+	}
+	.about-left ul {
+		margin: 30px 0;
+	}
+	.about-left ul li {
+		padding: 0 30px;
+	}
+	.about-left ul li a {
+		width: 20px;
+	    height: 34px;
+	    line-height: 34px;
+	    font-size: 34px;
+	}
+	.about-left ul li font {
+		margin: 12px 0 0 8px;
+	}
+	.about-left ul li span {
+		font-size: 14px;
+	}
+	.about-left p {
+		font-size: 14px;
+	    line-height: 30px;
+	    margin-bottom: 30px;
+	    -webkit-line-clamp: 5;
+	}
+	.video-left {
+	    width: 70%;
+	}
+	.video-content {
+	    width: 100%;
+	    display: inline-block;
+	}
+	.video-text h3 {
+	    font-size: 22px;
+	}
+	.video-text ul li {
+		font-size: 12px;
+    	line-height: 20px;
+    	float: left;
+    	width: 50%;
+	}
+	.video-text p {
+		margin-bottom: 20px;
+	    font-size: 12px;
+	    line-height: 20px;
+	    -webkit-line-clamp: 3;
+	}
+	.click-box {
+		font-size: 14px;
+	}
+	.video-text {
+		float: left;
+    	width: 100%;
+	}
+	.video-list {
+		height: 480px;
+	}
+	.video-right {
+		width: 24%;
+	}
+	.video-list ol li span a {
+		font-size: 12px;
+    	line-height: 20px;
+	}
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-	
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+	.background {
+	    margin: auto 0px auto;
+	    padding: 20px 15px 20px;
+	}
+	.about-left {
+		width: 100%;
+	}
+	.about-left h3 {
+	    width: 100%;
+	    text-align: center;
+	}
+	.about-left ul {
+	    width: 100%;
+	    text-align: center;
+	}
+	.about-right {
+	    float: left;
+	    width: 100%;
+	    margin: 3px 0 0 0;
+	    padding: 5px;
+	}
+	.about-list {
+		top: 0px;
+		left: 0px;
+	}
+	.about-list ul li {
+	    width: 3.33333%;
+	    padding: 5px;
+	}
+	.about-left h3 font {
+		font-size: 16px;
+    	line-height: 26px;
+	}
+	.about-left h3 span u {
+	    font-size: 30px;
+	}
+	.about-left h3 span {
+	    font-size: 26px;
+	}
+	.about-left ul {
+		height: 60px;
+		margin: 20px 0;
+	}
+	.about-left ul li {
+		padding: 0 10px;
+	}
+	.about-left ul li a {
+		width: 12px;
+	    height: 34px;
+	    line-height: 24px;
+	    font-size: 20px;
+	}
+	.about-left ul li font {
+		margin: 9px 0 0 1px;
+    	font-size: 12px;
+	}
+	.about-left ul li span {
+		font-size: 12px;
+	}
+	.about-left p {
+		font-size: 12px;
+    	line-height: 20px;
+	    margin-bottom: 0px;
+	    -webkit-line-clamp: 3;
+	}
+	.video-left {
+	    width: 70%;
+	}
+	.video-content {
+	    width: 100%;
+	    display: inline-block;
+	}
+	.video-text h3 {
+	    font-size: 22px;
+	}
+	.video-text ul li {
+		font-size: 12px;
+    	line-height: 20px;
+    	float: left;
+    	width: 50%;
+	}
+	.video-text ul {
+		display: none;
+	}
+	.video-text p {
+		margin-bottom: 20px;
+	    font-size: 12px;
+	    line-height: 20px;
+	    -webkit-line-clamp: 3;
+	}
+	.click-box {
+		display: none;
+		font-size: 14px;
+	}
+	.video-text {
+		float: left;
+    	width: 100%;
+	}
+	.video-list {
+		height: 260px;
+	}
+	.video-right {
+		width: 24%;
+	}
+	.video-list ol li span a {
+		font-size: 12px;
+    	line-height: 20px;
+	}
 }

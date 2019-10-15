@@ -19,11 +19,11 @@
 								<p class="p"><em>网络服务</em>技术股份有限公司</p>
 								<p>网络服务技术股份有限公司（Internet service technology, Limited by Share Ltd）成立于2017年7月，凭借拔尖的团队、优秀的业务能力，星如雨迅速成长为国内SEO的领军者。我们专注网络营销业务，助力您的企业腾飞。同时，我们还拥有一支健全的建站团队，向外界承接APP应用开发/微网站/公众号策划营销等业务。<br>&nbsp;</p>
 							</div>
-							<div class="row">
-								<div class="col-sm-6">
+							<div class="about-img">
+								<div class="img-box">
 									<img src="img/aboutUs1.jpg">
 								</div>
-								<div class="col-sm-6">
+								<div class="img-box">
 									<img src="img/aboutUs2.jpg">
 								</div>
 							</div>
@@ -43,5 +43,55 @@
 			</div>
 		</div>
 		
+		<!--图片放大-->
+		<div class="enlarge">
+			<div class="enlarge-content">
+				<div class="enlarge-head">
+					<div class="enlarge-pag">
+						<span class="current">1</span>
+							/
+						<span class="all">2</span>
+					</div>
+					<div class="close">
+						<a>X</a>
+					</div>
+				</div>
+				<div class="enlarge-bg-img">
+					<ul>
+						<li>
+							<img src="img/aboutUs1.jpg" />
+						</li>
+						<li>
+							<img src="img/aboutUs2.jpg" />
+						</li>
+					</ul>
+				</div>
+				<div class="enlarge-down">
+					<p class="enlarge-text">
+						图片关键词
+					</p>
+					<div class="enlarge-sm-img">
+						<div class="img-scroll img-scroll1">
+							<span class="prev prev1"> « </span>
+							<span class="next next1"> » </span>
+							<div class="img-list img-list1">
+								<ul>
+									<li><img src="img/aboutUs1.jpg"></li>
+									<li><img src="img/aboutUs2.jpg"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+		
 	</body>
 </html>
+<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="js/enlarge.js" ></script>
+<script>
+	
+	DY_scroll('.img-scroll1', '.prev1', '.next1', '.img-list1', 3, false);
+	
+</script>

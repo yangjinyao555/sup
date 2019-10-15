@@ -110,3 +110,27 @@ li {
     font-size: 17px;
     line-height: 1.8;
 }
+
+@media only screen and (max-width: 992px) {
+	.show-title {
+		font-size: 30px;
+	    padding-bottom: 18px;
+	    margin-bottom: 16px;
+	}
+	.show-text {
+		font-size: 18px;
+    	margin-bottom: 10px;
+	}
+	.show-word {
+		font-size: 16px;
+	    margin-bottom: 10px;
+	    padding: 0 15px;
+	}
+	.show-desc p {
+	    font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+}
