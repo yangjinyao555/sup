@@ -3,6 +3,10 @@ span,p{
 	padding:0;
 	
 }
+.sup-caseshow-detail .icon-naozhong{
+	font-size: 16px;
+	font-weight: bolder;
+}
 .sup-caseshow-detail {
 	background-image: url(../img/sup-bg-img.jpg);
 	padding:20px;
