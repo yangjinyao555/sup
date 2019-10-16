@@ -6,8 +6,7 @@ body{
 .sup-header{
 	position: relative;
 	/*height: 100px;*/
-	z-index: 10;
-	
+	z-index: 10;	
 }
 /*头部导航*/
 .sup-nav-cont{
@@ -236,19 +235,18 @@ body{
 /*首页蒙层封装*/
 
 
-/*响应式模块蒙层封装*/
-.sup-video .sup-video-cover-father{
+/*视频模块蒙层封装*/
+.sup-video .sup-video-corver-father{
 	position: relative;
 }
-.sup-video .sup-video-cover{
+.sup-video .sup-video-corver{
 	width:178px;
 	height:100px;
 	position:absolute;
 	top:0px;
 	left:0px;
 }
-
-.sup-video .sup-video-cover-cricle{  
+.sup-video .sup-video-corver-cricle{  
 	position: absolute;
 	top:50%;
 	left:50%;
@@ -262,7 +260,7 @@ body{
 	background:rgba(0,0,0,.5);
 	display: none;
 }
-.sup-video .sup-video-cover-cricle:after{
+.sup-video .sup-video-corver-cricle:after{
 	content: '';
 	display:inline-block;
 	border:12px solid transparent;
@@ -271,7 +269,7 @@ body{
 	top:8px;
 	left:15px;
 }
-.sup-video .sup-video-cover:hover  .sup-video-cover-cricle{
+.sup-video .sup-video-corver:hover  .sup-video-corver-cricle{
 	animation: supvdio 5s infinite alternate;
 	display:block;	
 }
@@ -344,18 +342,7 @@ body{
 	animation: supcaseshow 5s infinite alternate;	
 	display:block;	
 }
-@keyframes supcaseshow-descript{
-		0%{
-			display:none;
-			
-		}			
-		50% {
-			display:none;		
-		}		
-		100%{
-			display:block;		
-		}
-	}
+
 @keyframes supcaseshow{
 		0%{
 			display:none;
@@ -376,8 +363,89 @@ body{
 	}
 	
 /*产品部分蒙层封装*/
+.sup-product-corver-father{
+	position:relative;	
+}
 .sup-product-corver{
-	width:333px;
-	height:262px;
+	position: absolute;
+	top:0;
+	left:12px;
+	width:307px;
+	height:218px;	
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.sup-product-corver-father:hover .sup-product-corver{
+	display: block;
+}
+.sup-product-corver-box{
+	width: 100%;
+	height:100%;
 	border:1px solid #CCCCCC;
 }
+.sup-product-corver-father:hover .sup-product-corver-box{
+	animation:  index-product-small 3s  alternate;	
+}
+.sup-product-descript{
+	position: absolute;
+	bottom:-40px;
+	left:35%;	
+    border-top:2px solid transparent;	
+    z-index: 20;
+
+}
+.sup-product-corver-father:hover  .sup-product-descript{
+ 	animation: index-product-con 3s  alternate;	
+ 	bottom:20px;	
+ 	border-top:2px solid #00C0FF;
+ 	
+}
+.sup-product-corve-circle{
+	position: absolute;
+	top:50%;
+	left:50%;
+	font-size: 30px;
+	font-weight: bolder;
+	margin-top: -22px;
+	margin-left:-22px;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	color: #FFFDEF;
+	border:2px solid white;
+	border-radius: 50%;
+	display: none;
+}
+.sup-product-corver-father:hover .sup-product-corve-circle{
+	animation: supcaseshow 3s  alternate;		
+	display: block;
+
+}
+@keyframes index-product-small{
+		0%{
+			display:none;			
+		}			
+		50% {
+			display: block;
+			transform:scale(0.9);/*距离*/	
+		}		
+		100%{
+			display: block;
+			transform:scale(0.9);/*距离*/	
+		}
+	}
+@keyframes index-product-con{
+		0%{
+			  bottom:-40px;	
+			  border-top:2px solid transparent;		
+		}			
+		50% {
+			  bottom:20px;	
+			  border-top:2px solid #00C0FF;
+		}		
+		100%{
+			bottom:20px;
+			  border-top:2px solid #00C0FF;
+		}
+	}
