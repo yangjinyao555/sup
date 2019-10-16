@@ -128,15 +128,17 @@ li {
 }
 
 .enlarge-bg-img ul {
-	left: 50%;
     top: 50%;        
-    transform: translate(-50%,-75%);
+    transform: translate(0%,-75%);
     position: absolute;
+    width: 200%;
 }
 
 .enlarge-bg-img li {
 	text-align: center;
 	display: none;
+	float: left;
+    width: 50%;
 }
 
 .enlarge-bg-img li:nth-child(1) {
@@ -227,6 +229,33 @@ li {
 	background-color: #BDBDDF;
 	text-align: center;
 	line-height: 80px;
+}
+
+/*轮播图*/
+.dot-list {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.dot-list li {
+	float: left;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	line-height: 20px;
+	text-align: center;
+	background: rgba(255, 255, 255, .3);
+	cursor: pointer;
+	margin-right: 10px;
+	font-family: "楷体";
+	color: #ff2d52;
+}
+
+.dot-list li.cur {
+	background: rgba(255, 255, 255, .6);
 }
 
 @media only screen and (max-width: 992px) {
