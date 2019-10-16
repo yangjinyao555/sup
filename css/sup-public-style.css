@@ -1,5 +1,9 @@
 /*样式封装*/
 /*主题内容*/
+.content{
+	width:1200px;
+	margin: 0 auto;
+}
 /*字体大小*/
 .font-0{
 	font-size: 0;
@@ -399,6 +403,45 @@
 }
 .padding-30-lr{
 	padding: 0 30px;
+}
+/*35px*/
+.padding-35-t{
+	padding-top: 35px;
+}
+.padding-35-b{
+	padding-bottom: 35px;	
+}
+.padding-35-l{
+	padding-left: 35px;	
+}
+.padding-35-r{
+	padding-right: 35px;		
+}
+.padding-35-tb{
+	padding: 35px 0;
+}
+.padding-35-lr{
+	padding: 0 35px;
+}
+
+/*40px*/
+.padding-40-t{
+	padding-top: 40px;
+}
+.padding-40-b{
+	padding-bottom: 40px;	
+}
+.padding-40-l{
+	padding-left: 40px;	
+}
+.padding-40-r{
+	padding-right: 40px;		
+}
+.padding-40-tb{
+	padding: 40px 0;
+}
+.padding-40-lr{
+	padding: 0 40px;
 }
 
 /*行高22~50*/

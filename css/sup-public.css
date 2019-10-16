@@ -200,3 +200,184 @@ body{
 		width: 33px;
 	}
 }
+/*按钮read more封装*/
+.sup-readmore {
+	font-size: 18px;
+	text-decoration: line-through;
+}
+.sup-readmore:hover{
+	
+	animation: ani 1s infinite alternate;
+}
+	@keyframes ani{
+
+			0%{
+				font-size: 18px;
+				text-decoration: line-through;
+			}
+			25%{
+				font-size: 18px;
+				text-decoration: line-through;
+			}
+			
+			50% {
+				text-decoration: none;
+	            color:#00c0ff;
+			}
+			75% {
+				text-decoration: none;
+	            color:#00c0ff;
+			}
+			100%{
+				text-decoration: none;
+				color:#00c0ff;
+			}
+		}
+/*首页蒙层封装*/
+
+
+/*响应式模块蒙层封装*/
+.sup-video .sup-video-cover-father{
+	position: relative;
+}
+.sup-video .sup-video-cover{
+	width:178px;
+	height:100px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+.sup-video .sup-video-cover-cricle{  
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top: -20px;
+	margin-left:-20px;
+	width:40px;
+	height:40px;
+	line-height: 40px;
+	border:2px solid white;
+	border-radius: 50%;
+	background:rgba(0,0,0,.5);
+	display: none;
+}
+.sup-video .sup-video-cover-cricle:after{
+	content: '';
+	display:inline-block;
+	border:12px solid transparent;
+	border-left-color:white;
+	position: absolute;
+	top:8px;
+	left:15px;
+}
+.sup-video .sup-video-cover:hover  .sup-video-cover-cricle{
+	animation: supvdio 5s infinite alternate;
+	display:block;	
+}
+@keyframes supvdio{
+		0%{
+			display:block;
+			
+		}			
+		50% {
+			display:block;
+			background: #00C0FF;
+			
+
+		}		
+		100%{
+			display:block;
+			background: #00C0FF;
+		
+
+		}
+	}
+/*案例展示模块蒙层封装*/
+.sup-caseshow-cover-father{
+	position: relative;
+	
+}
+
+.sup-caseshow-cover{
+	width: 289px;
+	height:209px;
+	position:absolute;
+	top:0;
+	left:0;
+
+}
+.sup-caseshow-cover:hover{
+	background:rgba(0,0,0,.5);
+}
+.sup-caseshow-cover-circle{
+	position: absolute;
+	top:50%;
+	left:50%;
+	font-size: 30px;
+	font-weight: bolder;
+	margin-top: -22px;
+	margin-left:-22px;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	color: #FFFDEF;
+	border:2px solid white;
+	border-radius: 50%;
+	background:rgba(0,0,0,.5);
+	display: none;
+}
+.sup-caseshow-covercon{
+	position:absolute;
+	bottom:10%;
+	left:0;
+	padding-left:20px;
+	border-bottom: 2px solid #00C0FF;
+	display: none;
+}
+
+.sup-caseshow-cover-father:hover .sup-caseshow-covercon{
+	display: block;
+	animation: supcaseshow-descript 5s infinite alternate;
+}
+.sup-caseshow-cover:hover .sup-caseshow-cover-circle{
+	animation: supcaseshow 5s infinite alternate;	
+	display:block;	
+}
+@keyframes supcaseshow-descript{
+		0%{
+			display:none;
+			
+		}			
+		50% {
+			display:none;		
+		}		
+		100%{
+			display:block;		
+		}
+	}
+@keyframes supcaseshow{
+		0%{
+			display:none;
+			
+		}			
+		50% {
+			display:block;
+			background: #00C0FF;
+			
+
+		}		
+		100%{
+			display:block;
+			background: #00C0FF;
+		
+
+		}
+	}
+	
+/*产品部分蒙层封装*/
+.sup-product-corver{
+	width:333px;
+	height:262px;
+	border:1px solid #CCCCCC;
+}
