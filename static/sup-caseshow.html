@@ -78,8 +78,12 @@
 </html>
 <script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-<script>
-	$(".sup-caseshow-list").click(function(){
-		
-	})
+<script src="js/template.js"></script>
+<script src="js/ajax.js"></script>
+<script type="text/html" id="case">
+	{{each data as item i}}
+		<li class="sup-caseshow-list">
+			<a href="http://192.168.97.236:3006/{{item.href}}"> <img src="{{item.c_img}}"></a>
+		</li>
+	{{/each}}
 </script>

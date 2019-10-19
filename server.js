@@ -15,7 +15,31 @@ let urlenParser=bodyParser.urlencoded({extended:false});
 app.use(jsonParser)
 app.use(urlenParser)
 
+// 项目
 app.use(express.static(__dirname+'/static'))
 
+// 图片
+app.use(express.static('./upload'))
+
+// 跨域
+app.all("*",function(req,res,next){
+    res.header("Access-Control-Allow-Origin","*")
+    next()
+})
+
+console.log(111)
+// 添加新闻列表
+app.get("/news",router.getNews)
+console.log(666)
+// 为你推荐
+
+app.get("/recommend",router.getRecommend)
+console.log(88)
+// 案例展示
+app.get("/case",router.getCase)
+console.log(222)
+// 留言
 app.post('/massage',router.massage)
+
+console.log(3006)
 app.listen(3006)

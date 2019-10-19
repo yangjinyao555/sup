@@ -1,7 +1,7 @@
 //公共的配置信息
 module.exports={
    mysql:{
-        host:'127.0.0.1',
+        host:'192.168.97.247',
         user:'root',
         password:'root',
         database:'superman'

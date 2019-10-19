@@ -13,5 +13,14 @@ module.exports={
             return false;
         }
        
-    }
+    },
+    caseshow: async function() {
+        let sql = 'select * from case_img'
+        let result = await query(sql,null)
+        if(result){
+            return true;
+        }else{
+            return false;
+        }
+    },
 }
