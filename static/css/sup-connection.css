@@ -38,14 +38,48 @@
 /*给我们留言*/
 .sup-connection-message {
 	margin: 0 auto;
+	
     padding-top: 30px;
+}
+.sup-connection-message .sup-connection-form #email-error{
+	position:absolute;
+	bottom:-28px;
+	color:red;
+	left:0;
+}
+.sup-connection-message .sup-connection-form #name-error{
+	position:absolute;
+	bottom:-28px;
+	color:red;
+	left:0;
+}
+.sup-connection-message .sup-connection-form #telnum-error{
+	position:absolute;
+	bottom:-28px;
+	color:red;
+	left:0;
+}
+.sup-connection-message .sup-connection-form #address-error{
+	position:absolute;
+	bottom:-28px;
+	color:red;
+	left:0;
+}
+.sup-connection-message .sup-connection-form #massage-error{
+	position:absolute;
+	bottom:-28px;
+	color:red;
+	left:0;
+}
+.sup-connection-message .sup-connection-form{
+	width: 32.333%;
+	position: relative;
+
 }
 .sup-connection-forms{
 	width: 100%;
 }
-.sup-connection-form{
-	width: 32.333%;
-}
+
 .sup-connection-form .form-control{
 	width:90%;
 }
